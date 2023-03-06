@@ -7,11 +7,22 @@
     <title>WEBTEX</title>
     
     <script async src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <div class="todo-wrapper">
+        <div class="inputs-wrapper">
+            <input id="todo-input" class="todo-input todo-content" type="text" placeholder="Type any item">
+            <button onclick="addToDoItem()">ADD ITEM</button>
+        </div>
+        <!-- <input classs="todo-content" class="todo-input" type="text" placeholder="Type any item"> -->
+        <!-- <input class="todo-input"  type="text" placeholder="Type any item"> -->
+        <div class="list-wrapper">
+            <ul class="list-items">
 
-    <input type="text" placeholder="Type any item">
-    <button onclick="addToDoItem()">ADD ITEM</button>
+            </ul>
+        </div>
+    </div>
     <ul>
     </ul>
 </body>
