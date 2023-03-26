@@ -1,3 +1,5 @@
+const todoModule = (function () {
+
 const input = document.querySelector('input');
 input.addEventListener('keyup', onKeyUp);
 
@@ -44,3 +46,10 @@ document.onreadystatechange = () => {
         hasInput();
     }   
 };
+
+return {
+    addToDoItem
+}
+})();
+
+todoModule.addToDoItem();
