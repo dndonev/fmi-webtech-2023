@@ -1,4 +1,3 @@
-const todoModule = (function () {
 
 const input = document.querySelector('input');
 input.addEventListener('keyup', onKeyUp);
@@ -30,7 +29,7 @@ function addToDoItem() {
     }
     
     const li = document.createElement('li');
-    li.onclick = function (e) {
+    li.onclick = function (event) {
         e.currentTarget.remove();
         hasInput();
     }
@@ -46,10 +45,3 @@ document.onreadystatechange = () => {
         hasInput();
     }   
 };
-
-return {
-    addToDoItem
-}
-})();
-
-todoModule.addToDoItem();

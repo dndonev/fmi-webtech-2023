@@ -4,7 +4,14 @@ const { join } = require('path');
 const port = 3000; // define port number to run the server on it
 const cwd = process.cwd(); // get current working directory
 
-const indexHtml = join (cwd, 'public', 'index.html');
+
+const myobject = {
+    name: 'John'
+};
+
+const { name } = myobject;
+
+const indexHtml = path.join (cwd, 'public', 'index.html');
 const public = join (cwd, 'public');
 
 console.log('My html', indexHtml);

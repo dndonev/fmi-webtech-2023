@@ -41,7 +41,7 @@ app.post('/api/customers/create', (req, res) => {
     if (!id) {
         return res.status(400).send('Id is required');
     }
-    if (name && name !== '')    {
+    if (name && name === '')    {
         return res.status(400).send('Name is required');
     }
 
