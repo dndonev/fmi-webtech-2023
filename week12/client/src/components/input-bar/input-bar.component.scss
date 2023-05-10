@@ -1,0 +1,23 @@
+:host {
+	border: 1px solid blueviolet;
+	padding: 1rem;
+	width: 80%;
+	min-height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	border-radius: 1rem;
+
+	button {
+		min-width: 5rem;
+		border-radius: 1rem;
+		height: 100%;
+	}
+
+	input {
+		height: 100%;
+		width: 100%;
+		border-radius: 1rem;
+	}
+}
