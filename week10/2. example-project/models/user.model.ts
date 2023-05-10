@@ -26,7 +26,11 @@ export const userSchema = new Schema({
 	createDate: {
 		type: Schema.Types.Date,
 		default: Date.now
-	}
+	},
+	lastEdited: {
+		type: Schema.Types.Date,
+		default: Date.now
+	},
 });
 
 export const UserModel = model('User', userSchema);

@@ -10,11 +10,13 @@ const app = express();
 
 app.use(express.json());
 
+// localhost:300/api
 connectAPI(app, '/api');
 
 app.listen(
     process.env.PORT, async () => {
         await connect(process.env.DB_CONNECTION_STRING as string);
+
         console.log('Your server and DB are ready!')
     }
 );

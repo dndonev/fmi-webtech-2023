@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import mongoose from 'mongoose';
 import { compareSync, hash } from 'bcrypt';
 import { sign, verify } from 'jsonwebtoken';
 
+import mongoose from 'mongoose';
 import { UserModel } from '../models/user.model';
 import { RefreshTokenModel } from '../models/token.model';
 
